@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Inventory">
+<g clip-path="url(#clip0_0_446)">
+<g id="Apps/Inventory">
+<rect x="-0.290283" width="32" height="32" rx="16" fill="#00254A"/>
+<path id="Icon" d="M19.3226 23.4839H8.22585V12.3871L12.0968 8.51613H23.1936L23.1936 19.6129L19.3226 23.4839Z" fill="#5DABFF"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_446">
+<rect width="32" height="32" rx="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

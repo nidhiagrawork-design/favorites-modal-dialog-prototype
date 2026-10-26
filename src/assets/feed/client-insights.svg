@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Client Insights">
+<g clip-path="url(#clip0_0_9)">
+<g id="Apps/Client Insights">
+<rect x="0.161133" width="24" height="24" rx="12" fill="#00254A"/>
+<path id="Icon" fill-rule="evenodd" clip-rule="evenodd" d="M19.1289 8.12913C16.991 10.267 16.991 13.7332 19.1289 15.8711L16.0322 18.9677C13.8943 16.8299 10.428 16.8299 8.29009 18.9677L5.19339 15.8711C7.33125 13.7332 7.33123 10.267 5.19339 8.12913L8.29009 5.03226C10.428 7.17013 13.8943 7.17013 16.0322 5.03226L19.1289 8.12913ZM13.7122 10.4489C12.6856 10.6194 11.6364 10.6195 10.6099 10.4489C10.7804 11.4753 10.7804 12.5244 10.6099 13.5509C11.6364 13.3803 12.6857 13.3804 13.7122 13.5509C13.5417 12.5245 13.5416 11.4753 13.7122 10.4489Z" fill="#00D5B0"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_9">
+<rect width="24" height="24" rx="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,89 @@
+.left-nav {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  bottom: 0;
+  width: 74px;
+  min-width: 74px;
+  max-width: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-container-padding-x-small);
+  padding-top: var(--space-container-padding-x-small);
+  padding-bottom: var(--space-container-padding-x-small);
+  background: var(--nav-bar-container-background-primary);
+  border-right: 1px solid var(--nav-bar-divider-primary);
+  box-sizing: border-box;
+  z-index: 15;
+  overflow-y: auto;
+}
+
+.left-nav__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-x-small);
+  width: 100%;
+}
+
+.left-nav__group--pinned {
+  margin-top: var(--space-small);
+  padding-top: var(--space-small);
+  border-top: 1px solid var(--nav-bar-divider-primary);
+}
+
+.left-nav__section-label {
+  font-family: var(--font-name-component);
+  font-size: 10px;
+  font-weight: var(--font-weight-component-bold);
+  color: var(--color-icon-secondary);
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-component-gap-small);
+}
+
+.left-nav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-component-inline-padding-x-small);
+  width: 58px;
+  padding: var(--space-component-inline-padding-x-small) 0;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-medium);
+  color: var(--nav-bar-icon-primary);
+  cursor: pointer;
+}
+
+.left-nav__item:hover {
+  background: var(--color-container-background-secondary);
+}
+
+.left-nav__item--active {
+  background: var(--nav-bar-action-primary-active);
+  color: var(--nav-bar-icon-inverse);
+}
+
+.left-nav__icon-slot {
+  position: relative;
+  display: inline-flex;
+}
+
+.left-nav__icon-slot .numeric-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+}
+
+.left-nav__label {
+  font-family: var(--font-name-component);
+  font-size: 11px;
+  font-weight: var(--font-weight-component-semibold);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.left-nav__customize {
+  margin-top: auto;
+}

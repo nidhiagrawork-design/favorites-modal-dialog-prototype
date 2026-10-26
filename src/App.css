@@ -1,0 +1,14 @@
+.content-placeholder {
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-container-background-info);
+  border: 1px dashed var(--color-ui-discover);
+  border-radius: 4px;
+  color: var(--color-ui-discover);
+  font-family: var(--font-name-body);
+  font-size: var(--font-size-body-3);
+  font-weight: var(--font-weight-body-bold);
+}

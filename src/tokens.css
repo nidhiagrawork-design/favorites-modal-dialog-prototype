@@ -1,0 +1,170 @@
+/*
+ * Design tokens pulled verbatim from Figma get_variable_defs for:
+ *  - Product Shell (fdshZi6XC9QY9zLdxOvzWP, node 13331-94144)
+ *  - Company Switcher "Setting Favorites" flyout (oFzaU8erKFMwWELFEXdFm5, node 274-47660)
+ *
+ * NOTE: In the real codebase these resolve from the design-system's token
+ * stylesheet (ids-web / GBSG tokens). Since no local repo was available to
+ * pull the canonical token file from, values are hardcoded here as a stand-in
+ * ONLY. Every value below is annotated with the exact Figma variable name it
+ * came from — nothing here is eyeballed or invented.
+ */
+
+/* Actual "Avenir Next forINTUIT" webfont, served from Intuit's public CDN
+   (assets.intuitcdn.net/fonts/avenir-<weight>.woff2 — confirmed reachable,
+   referenced internally per JIRA SXD-902). Without this the font-family
+   name in the tokens below silently falls back to the system sans-serif. */
+@font-face {
+  font-family: "Avenir Next forINTUIT";
+  src: url("https://assets.intuitcdn.net/fonts/avenir-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Next forINTUIT";
+  src: url("https://assets.intuitcdn.net/fonts/avenir-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Next forINTUIT";
+  src: url("https://assets.intuitcdn.net/fonts/avenir-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Next forINTUIT";
+  src: url("https://assets.intuitcdn.net/fonts/avenir-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Next forINTUIT";
+  src: url("https://assets.intuitcdn.net/fonts/avenir-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Global header (Nav/Header/*) */
+  --nav-header-container-background-primary: #00254a; /* Nav/Header/Container/Background/Primary */
+  --nav-header-text-primary: #ffffff; /* Nav/Header/Text/Primary */
+  --nav-header-icon-primary: #ffffff; /* Nav/Header/Icon/Primary */
+  --nav-header-action-primary: #00254a00; /* Nav/Header/Action/Primary */
+  --nav-header-divider-primary: #d5dee3; /* Nav/Header/Divider/Primary */
+  --nav-header-avatar-background-primary: #5dabff; /* Nav/Header/Avatar/Background/Primary */
+  --nav-header-avatar-text-primary: #00254a; /* Nav/Header/Avatar/Text/Primary */
+
+  /* Left nav (Nav/Bar/*) */
+  --nav-bar-container-background-primary: #ffffff; /* Nav/Bar/Container/Background/Primary */
+  --nav-bar-icon-primary: #21262a; /* Nav/Bar/Icon/Primary */
+  --nav-bar-icon-inverse: #ffffff; /* Nav/Bar/Icon/Inverse */
+  --nav-bar-text-primary: #21262a; /* Nav/Bar/Text/Primary */
+  --nav-bar-action-primary: #17497f00; /* Nav/Bar/Action/Primary */
+  --nav-bar-action-primary-active: #00254a; /* Nav/Bar/Action/Primary active */
+  --nav-bar-divider-primary: #d5dee3; /* Nav/Bar/Divider/Primary */
+  --color-ui-new: #d72792; /* var(--color-ui-new) — badge fill */
+
+  /* Content region */
+  --color-page-background-primary: #ffffff; /* var(--color-page-background-primary) */
+  --color-container-background-info: #e0edff; /* var(--color-container-background-info) */
+  --color-ui-discover: #3492ef; /* var(--color-ui-discover) */
+
+  /* Radii */
+  --radius-small: 4px; /* var(--radius-small) */
+  --radius-medium: 6px; /* var(--radius-medium) */
+  --radius-large: 8px; /* var(--radius-large) */
+  --radius-x-large: 12px; /* var(--radius-x-large) */
+  --radius-full: 9999px; /* var(--radius-full) */
+
+  /* Spacing */
+  --space-x-small: 8px; /* var(--space-x-small) */
+  --space-small: 12px; /* var(--space-small) */
+  --space-component-gap-small: 4px; /* var(--space-component-gap-small) */
+  --space-component-gap-medium: 8px; /* var(--space-component-gap-medium) */
+  --space-component-inline-padding-x-small: 4px; /* var(--space-component-inline-padding-x-small) */
+  --space-component-inline-padding-small: 6px; /* var(--space-component-inline-padding-small) */
+  --space-component-inline-padding-medium: 8px; /* var(--space-component-inline-padding-medium) */
+  --space-component-inline-padding-xx-small: 2px; /* var(--space-component-inline-padding-xx-small) */
+  --space-component-inline-padding-xx-large: 16px; /* var(--space-component-inline-padding-xx-large) */
+  --space-component-inline-padding-xxx-large: 20px; /* var(--space-component-inline-padding-xxx-large) */
+  --space-component-stack-padding-x-small: 2px; /* var(--space-component-stack-padding-x-small) */
+  --space-component-stack-padding-medium: 6px; /* var(--space-component-stack-padding-medium) */
+  --space-row-gap-small: 12px; /* var(--space-row-gap-small) */
+  --space-container-padding-small: 16px; /* var(--space-container-padding-small) */
+  --space-container-padding-x-small: 12px; /* var(--space-container-padding-x-small) */
+  --space-container-padding-xx-small: 8px; /* var(--space-container-padding-xx-small) */
+  --space-container-padding-medium: 20px; /* var(--space-container-padding-medium) */
+  --space-container-padding-x-large: 32px; /* var(--space-container-padding-x-large) */
+  --space-container-padding-xx-large: 40px; /* var(--space-container-padding-xx-large) */
+
+  /* Text / body */
+  --color-text-primary: #393a3d; /* var(--color-text-primary) */
+  --color-icon-primary: #393a3d; /* var(--color-icon-primary) (flyout scope) */
+  --color-icon-secondary: #6b6c72; /* var(--color-icon-secondary) */
+  --color-input-placeholder: #babec5; /* var(--color-input-placeholder) */
+  --color-input-background-primary: #ffffff; /* var(--color-input-background-primary) */
+  --color-input-border-primary: #8d9096; /* var(--color-input-border-primary) */
+  --color-container-background-primary: #ffffff; /* var(--color-container-background-primary) */
+  --color-container-background-secondary: #f4f5f8; /* var(--color-container-background-secondary) */
+  --color-container-border-primary: #d4d7dc; /* var(--color-container-border-primary) */
+  --color-container-border-tertiary: #babec5; /* var(--color-container-border-tertiary) */
+
+  --font-name-body: "Avenir Next forINTUIT", -apple-system, sans-serif; /* var(--font-name-body) */
+  --font-name-component: "Avenir Next forINTUIT", -apple-system, sans-serif; /* var(--font-name-component) */
+  --font-size-body-1: 20px; /* var(--font-size-body-1) */
+  --font-size-body-2: 16px; /* var(--font-size-body-2) */
+  --font-size-body-3: 14px; /* var(--font-size-body-3) */
+  --font-size-body-4: 12px; /* var(--font-size-body-4) */
+  --font-size-input-text: 16px; /* var(--font-size-input-text) */
+  --font-size-component-medium: 16px; /* var(--font-size-component-medium) */
+  --font-size-component-small: 14px; /* var(--font-size-component-small) */
+  --font-size-component-x-small: 12px; /* var(--font-size-component-x-small) */
+  --font-weight-body: 400; /* var(--font-weight-body) */
+  --font-weight-body-bold: 600; /* var(--font-weight-body-bold) */
+  --font-weight-body-semibold: 500; /* var(--font-weight-body-semibold) */
+  --font-weight-component-bold: 600; /* var(--font-weight-component-bold) */
+  --font-weight-component-semibold: 500; /* var(--font-weight-component-semibold) */
+  --font-weight-input-text: 400; /* var(--font-weight-input-text) */
+
+  /* IDS Typography/Heading — Figma "IDS - Foundations and tokens"
+     (Q0HemoQpvXxl4pB3YA7VDZ, node 12671-29066), get_variable_defs, verified:
+     Heading/Default uses style "Demi" (var(--font-weight-heading): 600), NOT
+     the 400 previously assumed here — headings were rendering under-weighted. */
+  --font-size-heading-1: 48px;
+  --font-size-heading-2: 40px;
+  --font-size-heading-3: 34px;
+  --font-size-heading-4: 28px;
+  --font-size-heading-5: 24px;
+  --font-size-heading-6: 20px;
+  --line-height-heading-5: 32px;
+  --font-weight-heading: 600; /* var(--font-weight-heading) — style: Demi */
+  --font-weight-heading-bold: 800; /* var(--font-weight-heading-bold) — style: Bold */
+  /* Reference deploy (DidYouKnow-loader-prototype) renders large dollar
+     figures at Regular (400), not Demi — kept distinct from the token
+     library's own Heading/Default (600) for this "big number" usage. */
+  --font-weight-heading-5: var(--font-weight-body);
+  --font-size-display-tile-amount: 32px;
+
+  /* Smart tile x-small / Business Feed tile (0e3IqDGNdnpAFPddY19HZJ, node 5533-39568) */
+  --color-feed-tile-border: #d5dee3; /* var(--color-container-border-tertiary) in this component's scope */
+  --color-link-text: #205ea3; /* var(--color-link-text) */
+
+  /* Widget REFRESH SINGLE LINE / "Profit and loss" tile
+     (oFzaU8erKFMwWELFEXdFm5, node 274-41801) */
+  --font-name-heading: "Avenir Next forINTUIT", -apple-system, sans-serif; /* var(--font-name-heading) */
+  --color-blueberry-120: #001d3c; /* Primary/Blueberry/blueberry-120 */
+  --color-blueberry-80: #205ea3; /* Primary/Blueberry/blueberry-80 */
+  --color-spearmint-60: #00b797; /* Primary/Spearmint/spearmint-60 */
+  --color-ui-action-link: #0077c5; /* Semantics/Light/UI/ui-action-link */
+  --color-pepper-90: #4c555b; /* Primary/Pepper/pepper-90 */
+  --color-text-primary-alt: #21262a; /* Semantics/Text/Primary (this tile's scope) */
+
+  /* Elevation */
+  --elevation-level-1: 0px 1px 4px 0px rgba(0, 0, 0, 0.2); /* Elevation/Level-1 */
+}

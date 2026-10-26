@@ -1,0 +1,15 @@
+.numeric-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 var(--space-component-inline-padding-xx-small);
+  border-radius: var(--radius-full);
+  background: var(--color-ui-new);
+  color: var(--nav-header-text-primary);
+  font-family: var(--font-name-component);
+  font-size: var(--font-size-component-x-small);
+  font-weight: var(--font-weight-component-bold);
+  line-height: 1.3;
+}

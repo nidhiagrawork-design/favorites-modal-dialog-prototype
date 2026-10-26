@@ -1,0 +1,95 @@
+.fusion-shell-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  min-height: 56px;
+  max-height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: var(--space-container-padding-small);
+  padding-right: var(--space-container-padding-x-small);
+  background: var(--nav-header-container-background-primary);
+  z-index: 20;
+  box-sizing: border-box;
+}
+
+.fusion-shell-header__left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-component-inline-padding-xx-large);
+  flex-shrink: 0;
+}
+
+.fusion-shell-header__logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  font-family: var(--font-name-component);
+  font-size: var(--font-size-component-small);
+  font-weight: var(--font-weight-component-bold);
+  color: var(--nav-header-text-primary);
+  letter-spacing: 0.02em;
+}
+
+.fusion-shell-header__logo-sub {
+  font-size: 9px;
+  font-weight: var(--font-weight-body);
+  opacity: 0.85;
+  letter-spacing: 0.02em;
+}
+
+.fusion-shell-header__divider {
+  width: 1px;
+  height: 24px;
+  background: var(--nav-header-divider-primary);
+  opacity: 0.4;
+}
+
+.fusion-shell-header__middle {
+  flex: 1;
+  min-width: 352px;
+}
+
+.fusion-shell-header__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-component-inline-padding-xxx-large);
+  flex-shrink: 0;
+}
+
+/* Node 13401-575703: "Icon + Label" wrapper is 20px icon + 2px padding on
+   each side = 24px box, not a 20px box squeezing the icon down. */
+.fusion-shell-header__right .icon-button.icon-button--size-20 {
+  width: 24px;
+  height: 24px;
+}
+
+.fusion-shell-header__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  background: var(--nav-header-avatar-background-primary);
+  color: var(--nav-header-avatar-text-primary);
+  font-family: var(--font-name-component);
+  font-size: var(--font-size-component-x-small);
+  font-weight: var(--font-weight-body-bold);
+}
+
+.fusion-shell-header__omni {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  color: var(--nav-header-icon-primary);
+  cursor: pointer;
+  padding: 0;
+}
