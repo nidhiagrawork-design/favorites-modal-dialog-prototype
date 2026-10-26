@@ -10,10 +10,9 @@
  * came from — nothing here is eyeballed or invented.
  */
 
-/* Actual "Avenir Next forINTUIT" webfont, served from Intuit's public CDN
-   (assets.intuitcdn.net/fonts/avenir-<weight>.woff2 — confirmed reachable,
-   referenced internally per JIRA SXD-902). Without this the font-family
-   name in the tokens below silently falls back to the system sans-serif. */
+/* "Avenir Next forINTUIT" webfont, served from a public CDN. Without this
+   the font-family name in the tokens below silently falls back to the
+   system sans-serif. */
 @font-face {
   font-family: "Avenir Next forINTUIT";
   src: url("https://assets.intuitcdn.net/fonts/avenir-400.woff2") format("woff2");

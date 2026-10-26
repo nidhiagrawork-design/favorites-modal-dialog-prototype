@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/pages/nagrawal8/favorites-modal-dialog-prototype/',
+  base: '/favorites-modal-dialog-prototype/',
   plugins: [react()],
 })
